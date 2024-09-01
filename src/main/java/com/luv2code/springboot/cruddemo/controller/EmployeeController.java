@@ -23,7 +23,7 @@ public class EmployeeController {
     public String listEmployees(Model model){
         List<Employee> employeeList = employeeService.findAll();
         model.addAttribute("employeeList", employeeList);
-        return "list-employees";
+        return "employees/list-employees";
     }
 
 }
